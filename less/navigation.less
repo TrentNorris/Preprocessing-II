@@ -3,6 +3,11 @@ nav {
     padding: 3.5em;
     border-bottom: 2px dashed gray;
     .displayFlex(row, center, center);
+
+    @media @mobile {
+        .displayFlex(column, center, center) !important;
+        text-align: center;
+    }
   
   
       a {
@@ -10,10 +15,27 @@ nav {
         text-decoration: none;
         color: black;
         font-size: 1.75em;
+
+        @media @mobile {
+            margin: 0 !important;
+        }
       }
   
       #logo {
         margin: 0em 13.25em 0em 0em;
         font-size: 3em;
+
+        @media @mobile {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0px 0px 20px 0px !important;
+        }
+      }
+      
+      span {
+        @media @mobile {
+            .displayFlex(row, space-around, center);
+        }
       }
   }

@@ -43,10 +43,18 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+
+  @media @mobile {
+    padding: 10px;
+  }
 }
 
 .destination {
   .btn {
     .paramBtn(darkturquoise, white);
+
+    @media @mobile {
+      margin: 0 auto;
+    }
   }
 }
