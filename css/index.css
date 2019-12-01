@@ -163,8 +163,22 @@ img {
   max-width: 100%;
   height: auto;
 }
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.destination .btn {
+  width: 85%;
+  background: darkturquoise;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  color: white;
+  font-size: 2em;
+}
 nav {
-  background: #C0C0C0;
+  background: #EEEEEE;
   padding: 3.5em;
   border-bottom: 2px dashed gray;
   display: flex;
@@ -181,11 +195,6 @@ nav a {
 nav #logo {
   margin: 0em 13.25em 0em 0em;
   font-size: 3em;
-}
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
 }
 .footer {
   width: 100%;
@@ -243,4 +252,16 @@ nav #logo {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-left;
+  justify-items: left;
+}
+header img {
+  margin-bottom: 20px;
+}
+#head-hr {
+  border-bottom: 2px dashed gray;
 }
