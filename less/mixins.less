@@ -1,1 +1,16 @@
-// Mixins in here
+.displayFlex(@type, @justify, @items) {
+    display: flex;
+    flex-direction: @type;
+    justify-content: @justify;
+    justify-items: @items;
+}
+
+.paramBtn(@bg-color, @color) {
+    width: 85%;
+    background: @bg-color;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    color: @color;
+    font-size: 2em;
+}
