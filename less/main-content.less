@@ -11,18 +11,107 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+            .flex-column();
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        @media @tablet {
+            .flex-column();
+            text-align: center;
+            font-size: 2.5em;
+        }
+        
+        .text-content {
+            margin-bottom: 100px;
+            p {
+                @media @phone {
+                    margin: 40px 0;
+                    line-height: 50px;
+                }
+                @media @tablet {
+                    margin: 40px 0;
+                    line-height: 50px;
+                }
+            }
+
+            button {
+                @media @phone {
+                    box-sizing: content-box;
+                    padding: 20px;
+                    font-size: 0.6em;
+                }
+                @media @tablet {
+                    box-sizing: content-box;
+                    padding: 20px;
+                    font-size: 0.8em;
+                }
+            }
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        width: 100vw;
         .border-radius();
         .box-shadow(0px 0px 20px 4px black);
+
+        @media @phone {
+            width: 100vw;
+            margin: 30px auto 100px auto;
+        }
+        @media @tablet {
+            margin: 30px auto 100px auto;
+        }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+            .flex-column();
+            text-align: center;
+            font-size: 2.5em;
+        }
+        @media @tablet {
+            .flex-column();
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+
+
+        .text-content {
+            margin-bottom: 100px;
+            p {
+                @media @phone {
+                    margin: 40px 0;
+                    line-height: 50px;
+                }
+                @media @tablet {
+                    margin: 40px 0;
+                    line-height: 50px;
+                }
+            }
+
+            button {
+                @media @phone {
+                    box-sizing: content-box;
+                    padding: 20px;
+                    font-size: 0.6em;
+                }
+                @media @tablet {
+                    box-sizing: content-box;
+                    padding: 20px;
+                    font-size: 0.8em;
+                }
+                
+            }
+        }
 
         p {
             padding-right: 20px;

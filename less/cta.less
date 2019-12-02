@@ -5,6 +5,18 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @phone {
+        .flex-column();
+    }
+
+    img {
+        @media @phone {
+            width: 60%;
+            margin: 0 auto;
+        }
+    }
+    
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,6 +26,12 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+
+        @media @phone {
+            margin: 0px auto 40px auto;
+            font-size: 3.5em;
+        }
+        
     }
 
     .cta-text button {
@@ -26,6 +44,20 @@
         cursor: pointer;
         .skew(0deg, 2deg);
         .rotate(360deg);
+
+        @media @phone {
+            width: 80%;
+            height: 10%;
+            font-size: 0.5em;
+            margin: 40px 0;
+        }
+
+        @media @tablet {
+            
+            width: 90%;
+            height: 70px;
+            font-size: 20px;
+        }
 
         &:hover {
             background: black;
